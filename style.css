@@ -1,0 +1,55 @@
+body{
+    background-color: skyblue;
+}
+
+#canvas{
+    display: flex;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    height: 300px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#primary-number, #secondary-number{
+    font-size: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 125px;
+    font-weight: 800;
+}
+#primary-number{
+    border: 3px solid green;
+}
+#secondary-number{
+    border: 3px solid blue;
+}
+#add, #equal{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10PX;
+    font-weight: 900;
+}
+#guess{
+height: 40px;
+margin-right: 5px;
+border: 2px solid lightgreen;
+}
+#btn{
+height: 35px;
+background-color: red;
+border: 1px none none;
+width: 100px;
+color: white;
+}
+
+
+
+
+

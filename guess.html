@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cont">
+        <h1 style="margin: 0 auto; text-align: center;">Guess a Number between 1 and 10</h1>
+    <div id="canvas">
+        
+        <div>
+            <input type="number" id="guess">
+        </div>
+        <div>
+            <button id="btn" onclick="guess()">check</button>
+        </div>
+    </div>
+</div>
+    <script>
+
+        let randomNumber = parseInt(Math.random()*10)
+        const inputNumber = document.getElementById('guess')
+
+        function guess(){
+            value = Number(inputNumber.value)
+            if(value === randomNumber){
+                alert('correct! the number is ' +randomNumber)
+            }else{
+                alert('wrong! please try again, the number was ' +randomNumber)
+                inputNumber.value = ""
+            }
+
+        }
+
+    </script>
+</body>
+</html>
